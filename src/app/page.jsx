@@ -14,9 +14,9 @@ import "swiper/css/autoplay";
 // import pic2 from "../public/pic2.jpg";
 import React, { useState } from "react";
 import Navbar from "@/components/navbar/Navbar";
-import {BsTelephoneForward} from "react-icons/bs"
-import {BiPackage} from "react-icons/bi"
-import {GiPaintedPottery} from "react-icons/gi"
+import { BsTelephoneForward } from "react-icons/bs";
+import { BiPackage } from "react-icons/bi";
+import { GiPaintedPottery } from "react-icons/gi";
 
 const DynamicIcon = dynamic(
   () => import("react-icons/bs").then((mod) => mod.BsPlus),
@@ -33,7 +33,7 @@ const Main = ({ nav }) => {
   console.log(nav);
   return (
     <div className="mx-5 lg:mx-52 flex-col justify-center lg:mt-8">
-      <div className={nav ? "hidden" : ""}>
+      <div className={!nav ? "" : "hidden"}>
         <Swiper
           modules={[Pagination, Navigation, Autoplay]}
           slidesPerView={1}
@@ -95,7 +95,9 @@ const Main = ({ nav }) => {
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white">
-                    <h2 className="text-5xl font-bold">Go Green, Spend Smart</h2>
+                    <h2 className="text-5xl font-bold">
+                      Go Green, Spend Smart
+                    </h2>
                     <p className="text-lg mt-2">
                       Embrace Earth-Friendly Pottery Delight.
                     </p>
@@ -156,16 +158,11 @@ const Main = ({ nav }) => {
         </Swiper>
       </div>
 
-      {/* <div className=" lg:flex md:flex-2 gap-14 justify-center">
-          <div className=" bg-cyan-200 h-80 w-72 ml-10 rounded-3xl my-8"></div>
-          <div className=" bg-green-200 h-80 w-72 ml-10 rounded-3xl my-8"></div>
-          <div className=" bg-red-300 h-80 w-72 ml-10 rounded-3xl my-8"></div>
-          <div className=" bg-blue-400 h-80 w-72 ml-10 rounded-3xl my-8"></div>
-      </div> */}
+      {/* Best Selling */}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-4 md:grid-rows-2 md:gap-x-24 mt-8">
-        <div className=" bg-slate-000 md:w-72 rounded-3xl text-start flex-col mt-8 ">
-          <div className="font-bold text-[30px] pb-2 text-[#1e1e1ed6] pt-28">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-4 md:grid-rows-2 md:gap-x-52 mt-16">
+        <div className=" bg-slate-000 md:w-72 rounded-3xl text-start flex-col mt-9">
+          <div className="font-bold text-[30px] pb-2 text-[#1e1e1ed6]">
             Best Selling Products
           </div>
 
@@ -173,156 +170,145 @@ const Main = ({ nav }) => {
             Easiest way to convert you home by buying your favorite items
           </div>
 
-          <Link href="/Product">
-            <button
-              className="bg-blue-200 rounded-lg p-4 flex font-semibold items-center justify-between cursor-pointer"
-              href="/Product"
-            >
+          <button className="bg-blue-200 rounded-lg p-4 flex font-semibold items-center justify-between cursor-pointer">
+            <Link href="/Product">
               <div>See More</div>
-
-              <div className="mx-2">
-                <FcRight />
-              </div>
-            </button>
-          </Link>
+            </Link>
+            <div>
+              <FcRight />
+            </div>
+          </button>
         </div>
 
-        <div>
-          <div className=" cursor-pointer  rounded-3xl my-8">
-            <Image
-              src="https://images.unsplash.com/photo-1607448885122-b3d4cf451587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-              height={100}
-              width={200}
-              alt="htf"
-              className="w-full h-auto rounded-xl shadow-xl shadow-green-200"
-            />
-            <div className="pt-5 text-start text-[18px] font-medium font-poppins mx-5">
-              Ceramic Tea Set
-            </div>
-            <div className="text-[18px] font-medium text-black text-opacity-60 text-start font-poppins mx-5">
-              $45.45
-            </div>
+        <div className="rounded-3xl my-8 cursor-pointer">
+          <Image
+            src="https://images.pexels.com/photos/15211604/pexels-photo-15211604/free-photo-of-snail-climbing-novelty-flower-pot.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            height={400}
+            width={400}
+            alt="htf"
+            className="w-full h-auto rounded-3xl hover:shadow-xl shadow-red-500 duration-300"
+          />
+          <div className="pt-5 text-start text-[18px] font-medium font-poppins mx-5">
+            Snail Flower Pot
+          </div>
+          <div className="text-[18px] font-medium text-black text-opacity-60 text-start font-poppins mx-5">
+            ₹ 4545.00
           </div>
         </div>
-
-        <div>
-          <div className="cursor-pointer  rounded-3xl my-8">
-            <Image
-              src="https://images.unsplash.com/photo-1607448885122-b3d4cf451587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-              height={100}
-              width={200}
-              alt="htf"
-              className="w-full h-auto rounded-xl shadow-xl shadow-green-200"
-            />
-            <div className="pt-5 text-start text-[18px] font-medium font-poppins mx-5">
-              Ceramic Tea Set
-            </div>
-            <div className="text-[18px] font-medium text-black text-opacity-60 text-start font-poppins mx-5">
-              $45.45
-            </div>
+        <div className="rounded-3xl my-8 cursor-pointer">
+          <Image
+            src="https://images.pexels.com/photos/14782252/pexels-photo-14782252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            height={400}
+            width={400}
+            alt="htf"
+            className="w-full h-auto rounded-3xl hover:shadow-xl shadow-red-500 duration-300"
+          />
+          <div className="pt-5 text-start text-[18px] font-medium font-poppins mx-5">
+            Ceramic Smiley Cup
+          </div>
+          <div className="text-[18px] font-medium text-black text-opacity-60 text-start font-poppins mx-5">
+            ₹ 623.00
           </div>
         </div>
-
-        <div>
-          <div className="cursor-pointer  rounded-3xl my-8">
-            <Image
-              src="https://images.unsplash.com/photo-1607448885122-b3d4cf451587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-              height={100}
-              width={200}
-              alt="htf"
-              className="w-full h-auto rounded-xl shadow-xl shadow-green-200"
-            />
-            <div className="pt-5 text-start text-[18px] font-medium font-poppins mx-5">
-              Ceramic Tea Set
-            </div>
-            <div className="text-[18px] font-medium text-black text-opacity-60 text-start font-poppins mx-5">
-              $45.45
-            </div>
+        <div className="rounded-3xl my-8 cursor-pointer">
+          <Image
+            src="https://images.unsplash.com/photo-1630543378528-10043e324452?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+            height={400}
+            width={400}
+            alt="htf"
+            className="w-full h-auto rounded-3xl hover:shadow-xl shadow-red-500 duration-300"
+          />
+          <div className="pt-5 text-start text-[18px] font-medium font-poppins mx-5">
+            Ceramic Tea Set
+          </div>
+          <div className="text-[18px] font-medium text-black text-opacity-60 text-start font-poppins mx-5">
+            ₹ 323.00
           </div>
         </div>
-
-        <div className="cursor-pointer hidden lg:block">
-          <div className="  rounded-3xl my-8">
-            <Image
-              src="https://images.unsplash.com/photo-1607448885122-b3d4cf451587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-              height={100}
-              width={200}
-              alt="htf"
-              className="w-full h-auto rounded-xl shadow-xl shadow-green-200"
-            />
-            <div className="pt-5 text-start text-[18px] font-medium font-poppins mx-5">
-              Ceramic Tea Set
-            </div>
-            <div className="text-[18px] font-medium text-black text-opacity-60 text-start font-poppins mx-5">
-              $45.45
-            </div>
+        <div className="rounded-3xl my-8 hidden lg:block cursor-pointer">
+          <Image
+            src="https://images.unsplash.com/photo-1602578585199-cfdb786ecf32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+            height={400}
+            width={400}
+            alt="htf"
+            className="w-full h-auto rounded-3xl hover:shadow-xl shadow-red-500 duration-300"
+          />
+          <div className="pt-5 text-start text-[18px] font-medium font-poppins mx-5">
+            Black Classy Tea Set
+          </div>
+          <div className="text-[18px] font-medium text-black text-opacity-60 text-start font-poppins mx-5">
+            ₹ 1623.00
           </div>
         </div>
-
-        <div className="cursor-pointer hidden lg:block">
-          <div className="  rounded-3xl my-8">
-            <Image
-              src="https://images.unsplash.com/photo-1607448885122-b3d4cf451587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-              height={100}
-              width={200}
-              alt="htf"
-              className="w-full h-auto rounded-xl shadow-xl shadow-green-200"
-            />
-            <div className="pt-5 text-start text-[18px] font-medium font-poppins mx-5">
-              Ceramic Tea Set
-            </div>
-            <div className="text-[18px] font-medium text-black text-opacity-60 text-start font-poppins mx-5">
-              $45.45
-            </div>
+        <div className="hidden lg:block rounded-3xl my-8 cursor-pointer">
+          <Image
+            src="https://images.pexels.com/photos/11098764/pexels-photo-11098764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            height={400}
+            width={400}
+            alt="htf"
+            className="w-full h-auto rounded-3xl hover:shadow-xl hover:shadow-grey-600 duration-300"
+          />
+          <div className="pt-5 text-start text-[18px] font-medium font-poppins mx-5">
+            Glass Lamp
+          </div>
+          <div className="text-[18px] font-medium text-black text-opacity-60 text-start font-poppins mx-5">
+            ₹ 3600.00
           </div>
         </div>
       </div>
+
+      {/* ABOUT */}
+
       <div>
-      <div className="mt-5">
-        <div className="text-[40px] font-semibold flex justify-center">
-          Who Are We
+        <div className="mt-5">
+          <div className="text-[40px] font-semibold flex justify-center">
+            Who Are We
+          </div>
+          <p className="flex justify-center font-semibold text-gray-500 mt-2">
+            Order now and appricate thy beauty of nature.
+          </p>
         </div>
-        <p className="flex justify-center font-semibold text-gray-500 mt-2">
-          Order now and appricate thy beauty of nature.
-        </p>
-      </div>
 
-      <div className="">
-        <div className="bg-blue- rounded-lg p-4 md:flex  font-semibold items-center justify-center gap-20">
-          <div className="  h-80 w-72 ml-10 rounded-3xl my-8 flex justify-center items-center flex-col hover:shadow-xl hover:shadow-[#C1DCDC]">
-            <div className="bg-[#C1DCDC] rounded-full ">
-              <GiPaintedPottery className="flex items-center h-24 w-24 p-2 "/>
+        <div className="">
+          <div className="rounded-lg md:flex font-semibold items-center justify-center gap-20 cursor-pointer">
+            <div className="  h-80 w-72 m-10 rounded-3xl my-8 flex justify-center items-center flex-col hover:shadow-xl hover:shadow-[#C1DCDC]">
+              <div className="bg-[#C1DCDC] rounded-full ">
+                <GiPaintedPottery className="flex items-center h-24 w-24 p-2 " />
+              </div>
+              <div className="font-bold mt-4 text-center">Large Assortment</div>
+              <div className="text-gray-500 flex justify-center text-center	mt-3">
+                we offer many different types of products with lot of variation
+                in each category.
+              </div>
             </div>
-            <div className="font-bold mt-4 text-center">Large Assortment</div>
-            <div className="text-gray-500 flex justify-center text-center	mt-3">
-              we offer many different types of products with lot of variation in
-              each category.
-            </div>
-          </div>
 
-          <div className="  h-80 w-72 ml-10 rounded-3xl my-8 flex justify-center items-center flex-col hover:shadow-xl hover:shadow-[#C1DCDC]">
-            <div className="bg-[#C1DCDC] rounded-full ">
-              <BiPackage className="flex items-center h-24 w-24 p-2" />
+            <div className="  h-80 w-72 m-10 rounded-3xl my-8 flex justify-center items-center flex-col hover:shadow-xl hover:shadow-[#C1DCDC]">
+              <div className="bg-[#C1DCDC] rounded-full ">
+                <BiPackage className="flex items-center h-24 w-24 p-2" />
+              </div>
+              <div className="font-bold mt-4 text-center">
+                Fast & Free Shiping
+              </div>
+              <div className="text-gray-500 flex justify-center text-center	mt-3 p-1">
+                4-day or less delivery time, free shiping and an expedited
+                delivery option.
+              </div>
             </div>
-            <div className="font-bold mt-4 text-center">Fast & Free Shiping</div>
-            <div className="text-gray-500 flex justify-center text-center	mt-3 p-1">
-              4-day or less delivery time, free shiping and an expedited
-              delivery option.
-            </div>
-          </div>
 
-          <div className="  h-80 w-72 ml-10 rounded-3xl my-8 flex justify-center items-center flex-col hover:shadow-xl hover:shadow-[#C1DCDC]">
-            <div className="bg-[#C1DCDC] rounded-full ">
-              <BsTelephoneForward className="flex items-center h-24 w-24 p-4" />
-            </div>
-            <div className="font-bold mt-4 text-center">Fast & Free Shiping</div>
-            <div className="text-gray-500 flex justify-center text-center	mt-3 p-1">
-              answer to any bussiness related inquiry 24/7 and in real-time.{" "}
+            <div className="  h-80 w-72 m-10 rounded-3xl my-8 flex justify-center items-center flex-col hover:shadow-xl hover:shadow-[#C1DCDC]">
+              <div className="bg-[#C1DCDC] rounded-full ">
+                <BsTelephoneForward className="flex items-center h-24 w-24 p-4" />
+              </div>
+              <div className="font-bold mt-4 text-center">
+                Fast & Free Shiping
+              </div>
+              <div className="text-gray-500 flex justify-center text-center	mt-3 p-1">
+                answer to any bussiness related inquiry 24/7 and in real-time.{" "}
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
       <div>
         <div className="">
           <div className="text-[40px] font-semibold flex justify-center">
