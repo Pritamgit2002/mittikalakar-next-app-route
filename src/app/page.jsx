@@ -36,7 +36,7 @@ const Main = ({ nav }) => {
           slidesPerView={1}
           navigation
           autoplay={{
-            delay: 1000,
+            delay: 3000,
           }}
           loop={true}
           className="cursor-pointer h-[450px] lg:h-[580px] rounded-[35px] bg-red-200 shadow-xl shadow-gray-400 "
@@ -47,8 +47,8 @@ const Main = ({ nav }) => {
               <div className="relative h-full">
                 <Image
                   src="https://images.unsplash.com/photo-1488977678660-dca8681ca872?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                  height={100}
-                  width={200}
+                  height={400}
+                  width={800}
                   alt="htf"
                   className="w-full h-full shadow-xl shadow-gray-500"
                 />
@@ -66,8 +66,8 @@ const Main = ({ nav }) => {
               <div className="relative h-full">
                 <Image
                   src="https://images.pexels.com/photos/4992831/pexels-photo-4992831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  height={100}
-                  width={200}
+                  height={400}
+                  width={800}
                   alt="htf"
                   className="h-full w-full shadow-2xl shadow-gray-500"
                 />
@@ -85,8 +85,8 @@ const Main = ({ nav }) => {
               <div className="relative h-full">
                 <Image
                   src="https://images.unsplash.com/photo-1493106641515-6b5631de4bb9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1269&q=80"
-                  height={100}
-                  width={200}
+                  height={400}
+                  width={800}
                   alt="htf"
                   className="h-full w-full shadow-2xl shadow-gray-500"
                 />
@@ -104,8 +104,8 @@ const Main = ({ nav }) => {
             <SwiperSlide>
               <Image
                 src="https://images.unsplash.com/photo-1632819506620-cc0f984af43a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
-                height={100}
-                width={200}
+                height={400}
+                width={800}
                 alt="trfdtrd"
                 className="h-full w-full shadow-2xl shadow-gray-500"
               />
@@ -114,8 +114,8 @@ const Main = ({ nav }) => {
               <div className="relative h-full">
                 <Image
                   src="https://images.unsplash.com/photo-1628281321655-060c5fb662a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1167&q=80"
-                  height={100}
-                  width={200}
+                  height={400}
+                  width={800}
                   alt="trfdtrd"
                   className="h-full w-full shadow-2xl shadow-gray-500"
                 />
@@ -133,8 +133,8 @@ const Main = ({ nav }) => {
               <div className="relative h-full">
                 <Image
                   src="https://images.unsplash.com/photo-1481401908818-600b7a676c0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
-                  height={100}
-                  width={200}
+                  height={400}
+                  width={800}
                   alt="trfdtrd"
                   className="h-full w-full shadow-2xl shadow-gray-500"
                 />
