@@ -1,0 +1,5 @@
+.container {
+  -webkit-clip-path: ellipse(76% 77% at 59% 81%);
+  clip-path: ellipse(76% 77% at 59% 81%);
+  background-color: #c1dcdc;
+}

@@ -49,8 +49,7 @@ const Navbar = () => {
                   <span className="inline-block p-1 transition duration-500 ease-out group-hover:-translate-y-[120%]">
                     {links.title}
                   </span>
-
-                  <span className="absolute left-0 translate-y-[180%] rotate-45  p-1 transition duration-500 ease-out group-hover:translate-y-0 group-hover:rotate-0">
+                  <span className="absolute left-0 translate-y-[180%] rotate-12 p-1 transition duration-500 ease-out group-hover:translate-y-0 group-hover:rotate-0">
                     {links.title}
                   </span>
                 </div>

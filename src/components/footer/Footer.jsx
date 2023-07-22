@@ -1,21 +1,20 @@
 import Link from "next/link";
 import React from "react";
 import {FaFacebook , FaInstagram , FaTwitter} from "react-icons/fa"
+import styles from "./footer.module.css"
 
 const Footer = () => {
   return (
     <div>
-      <footer className="bg-white dark:bg-[#C1DCDC]">
-        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <footer className={`${styles.container}`}>
+        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-12">
           <div className="md:flex md:justify-between">
-            <div className="mb-6 md:mb-0">
               <Link href="/" className="flex items-center">
                 {/* <img src='' className="h-10 mr-3" alt="Mittimaker Logo" /> */}
                 <span className="self-center text-2xl font-semibold whitespace-nowrap ">
                   Mittimaker
                 </span>
               </Link>
-            </div>
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
