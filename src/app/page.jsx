@@ -291,7 +291,7 @@ const Main = ({ nav }) => {
         <div className="bg-blue- rounded-lg p-4 md:flex  font-semibold items-center justify-center gap-20">
           <div className="  h-80 w-72 ml-10 rounded-3xl my-8 flex justify-center items-center flex-col hover:shadow-xl hover:shadow-[#C1DCDC]">
             <div className="bg-[#C1DCDC] rounded-full ">
-              <GiPaintedPottery className="flex items-center h-24 w-24 p-2 " />
+              <GiPaintedPottery className="flex items-center h-24 w-24 p-2 "/>
             </div>
             <div className="font-bold mt-4 text-center">Large Assortment</div>
             <div className="text-gray-500 flex justify-center text-center	mt-3">
