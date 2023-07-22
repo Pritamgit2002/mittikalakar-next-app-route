@@ -58,7 +58,14 @@ const Navbar = () => {
             ))}
           </div>
           <div className="text-[26px]">
-            <LiaShoppingCartSolid />
+            <div className="group overflow-hidden relative cursor-pointer text-normal uppercase  leading-6 hover:border-b-4 border-black duration-150">
+              <span className="inline-block p-1 pb-0 transition duration-500 ease-out group-hover:translate-x-[120%]">
+                <LiaShoppingCartSolid size={35}/>
+              </span>
+              <span className="absolute left-0 -translate-x-[180%]  p-1 pb-0 transition duration-500 ease-out group-hover:translate-x-0 group-hover:rotate-0">
+                <LiaShoppingCartSolid size={35} className="text-blue-500"/>
+              </span>
+            </div>
           </div>
           {/* Hamburger Icon */}
           <div onClick={handleNav} className="md:hidden">
