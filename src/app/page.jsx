@@ -270,7 +270,7 @@ const Main = ({ nav }) => {
         </div>
 
         <div className="">
-          <div className="rounded-lg md:flex font-semibold items-center justify-center gap-20 cursor-pointer">
+          <div className="rounded-lg md:flex font-semibold items-center justify-center gap-20">
             <div className="  h-80 w-72 m-10 rounded-3xl my-8 flex justify-center items-center flex-col hover:shadow-xl hover:shadow-[#C1DCDC]">
               <div className="bg-[#C1DCDC] rounded-full ">
                 <GiPaintedPottery className="flex items-center h-24 w-24 p-2 " />
