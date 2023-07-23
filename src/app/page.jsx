@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { FcRight } from "react-icons/fc";
 import Link from "next/link";
-import BsPlus from "react-icons/bs";
 import dynamic from "next/dynamic";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -17,7 +16,9 @@ import Navbar from "@/components/navbar/Navbar";
 import { BsTelephoneForward } from "react-icons/bs";
 import { BiPackage } from "react-icons/bi";
 import { GiPaintedPottery } from "react-icons/gi";
-import Preloader from "@/components/preloader/Preloader";
+import { BsPlus, BsEyeFill } from "react-icons/bs";
+
+// import Preloader from "@/components/preloader/Preloader";
 
 const DynamicIcon = dynamic(
   () => import("react-icons/bs").then((mod) => mod.BsPlus),
@@ -34,7 +35,6 @@ const Main = ({ nav }) => {
   console.log(nav);
   return (
     <>
-      <Preloader />
       <div className="mx-5 lg:mx-52 flex-col justify-center lg:mt-8">
         <div className={!nav ? "" : "hidden"}>
           <Swiper
@@ -185,14 +185,33 @@ const Main = ({ nav }) => {
             </button>
           </div>
 
+
+
+
+
+
+
           <div className="my-8 cursor-pointer">
+
+
+            <div>
             <Image
               src="https://images.pexels.com/photos/15211604/pexels-photo-15211604/free-photo-of-snail-climbing-novelty-flower-pot.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               height={400}
               width={400}
               alt="htf"
-              className="w-full h-auto hover:shadow-xl shadow-red-500 duration-300"
+              className="w-full h-auto hover:shadow-xl hover:shadow-red-500 duration-300 rounded-3xl ease hover:opacity-50"
             />
+            {/* <div className="transition duration-500 ease opacity-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center hover:opacity-60>
+
+            </div> */}
+
+            <div>
+
+            </div>
+            </div>
+
+
             <div className="pt-3 flex justify-between items-center">
               <div>
                 <div className="text-start text-[16px] font-medium font-poppins">
@@ -205,6 +224,13 @@ const Main = ({ nav }) => {
               <button className="px-6 bg-slate-500 py-2 rounded text-white">BRO</button>
             </div>
           </div>
+
+
+
+
+
+
+
           <div className="my-8 cursor-pointer">
             <Image
               src="https://images.pexels.com/photos/14782252/pexels-photo-14782252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
