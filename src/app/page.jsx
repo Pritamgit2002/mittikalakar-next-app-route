@@ -2,41 +2,33 @@
 import Image from "next/image";
 import { FcRight } from "react-icons/fc";
 import Link from "next/link";
-import dynamic from "next/dynamic";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import slide_1 from "../../public/assets/slide_1.jpg";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 // import pic2 from "../public/pic2.jpg";
-import React, { useState } from "react";
-import Navbar from "@/components/navbar/Navbar";
-import { BsTelephoneForward } from "react-icons/bs";
-import { BiPackage } from "react-icons/bi";
-import { GiPaintedPottery } from "react-icons/gi";
-import { BsPlus, BsEyeFill } from "react-icons/bs";
+import React, { useEffect } from "react";
+import { BsPlus } from "react-icons/bs";
+import Motion from "./motions/page";
+import About from "./about/page";
 
 // import Preloader from "@/components/preloader/Preloader";
 
-const DynamicIcon = dynamic(
-  () => import("react-icons/bs").then((mod) => mod.BsPlus),
-  {
-    ssr: false,
-  }
-);
+const Main = () => {
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
 
-const Main = ({ nav }) => {
-  // const [pro, setPro] = useState(false);
-  // const handleNav = () => {
-  //   setPro(!pro);
-  // };
-  console.log(nav);
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
+  }, []);
+
   return (
     <>
       <div className="mx-5 lg:mx-52 flex-col justify-center lg:mt-8">
-        <div className={!nav ? "" : "hidden"}>
+        <div className="swiper-container">
           <Swiper
             modules={[Pagination, Navigation, Autoplay]}
             slidesPerView={1}
@@ -45,10 +37,11 @@ const Main = ({ nav }) => {
               delay: 3000,
             }}
             loop={true}
-            className="cursor-pointer h-[450px] lg:h-[580px] rounded-[35px] bg-red-200 shadow-xl shadow-gray-400 "
+            className="cursor-pointer h-[450px] lg:h-[580px] rounded-[35px] bg-red-200 shadow-xl shadow-gray-400"
             pagination={{ clickable: true }}
           >
             <div className="flex items-center justify-center ">
+
               <SwiperSlide>
                 <div className="relative h-full">
                   <Image
@@ -68,6 +61,7 @@ const Main = ({ nav }) => {
                   </div>
                 </div>
               </SwiperSlide>
+              
               <SwiperSlide>
                 <div className="relative h-full">
                   <Image
@@ -185,32 +179,22 @@ const Main = ({ nav }) => {
             </button>
           </div>
 
-
-
-
-
-
-
           <div className="my-8 cursor-pointer">
+            <div className="realtive flex justify-center items-center">
+              <Image
+                src="https://images.pexels.com/photos/15211604/pexels-photo-15211604/free-photo-of-snail-climbing-novelty-flower-pot.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                height={400}
+                width={400}
+                alt="htf"
+                className="w-full h-auto hover:shadow-xl hover:shadow-red-500 duration-300 rounded-3xl ease hover:opacity-50"
+              />
 
-
-            <div>
-            <Image
-              src="https://images.pexels.com/photos/15211604/pexels-photo-15211604/free-photo-of-snail-climbing-novelty-flower-pot.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              height={400}
-              width={400}
-              alt="htf"
-              className="w-full h-auto hover:shadow-xl hover:shadow-red-500 duration-300 rounded-3xl ease hover:opacity-50"
-            />
-            {/* <div className="transition duration-500 ease opacity-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center hover:opacity-60>
-
-            </div> */}
-
-            <div>
-
+              <button className="absolute opacity-0 hover:opacity-100">
+                <div className="flex justify-center items-center text-white w-12 h-12 bg-red-500 shadow-xl shadow-red-500 rounded-xl">
+                  <BsPlus className="text-3xl" />
+                </div>
+              </button>
             </div>
-            </div>
-
 
             <div className="pt-3 flex justify-between items-center">
               <div>
@@ -221,15 +205,11 @@ const Main = ({ nav }) => {
                   ₹ 4545.00
                 </div>
               </div>
-              <button className="px-6 bg-slate-500 py-2 rounded text-white">BRO</button>
+              <button className="px-6 bg-slate-500 py-2 rounded text-white">
+                BRO
+              </button>
             </div>
           </div>
-
-
-
-
-
-
 
           <div className="my-8 cursor-pointer">
             <Image
@@ -291,62 +271,41 @@ const Main = ({ nav }) => {
               ₹ 3600.00
             </div>
           </div>
+          <div className="hidden lg:block my-8 cursor-pointer">
+            <Image
+              src="https://images.pexels.com/photos/11098764/pexels-photo-11098764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              height={400}
+              width={400}
+              alt="htf"
+              className="w-full h-auto hover:shadow-xl hover:shadow-grey-600 duration-300"
+            />
+            <div className="pt-5 text-start text-[18px] font-medium font-poppins mx-5">
+              Glass Lamp
+            </div>
+            <div className="text-[18px] font-medium text-black text-opacity-60 text-start font-poppins mx-5">
+              ₹ 3600.00
+            </div>
+          </div>
+          <div className="hidden lg:block my-8 cursor-pointer">
+            <Image
+              src="https://images.pexels.com/photos/11098764/pexels-photo-11098764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              height={400}
+              width={400}
+              alt="htf"
+              className="w-full h-auto hover:shadow-xl hover:shadow-grey-600 duration-300"
+            />
+            <div className="pt-5 text-start text-[18px] font-medium font-poppins mx-5">
+              Glass Lamp
+            </div>
+            <div className="text-[18px] font-medium text-black text-opacity-60 text-start font-poppins mx-5">
+              ₹ 3600.00
+            </div>
+          </div>
         </div>
 
         {/* ABOUT */}
+        <About />
 
-        <div>
-          <div className="mt-5">
-            <div className="text-[40px] font-semibold flex justify-center">
-              Who Are We
-            </div>
-            <p className="flex justify-center font-semibold text-gray-500 mt-2">
-              Order now and appricate thy beauty of nature.
-            </p>
-          </div>
-
-          <div className="">
-            <div className="rounded-lg md:flex font-semibold items-center justify-center gap-20">
-              <div className="  h-80 w-72 m-10 rounded-3xl my-8 flex justify-center items-center flex-col hover:shadow-xl hover:shadow-[#C1DCDC]">
-                <div className="bg-[#C1DCDC] rounded-full ">
-                  <GiPaintedPottery className="flex items-center h-24 w-24 p-2 " />
-                </div>
-                <div className="font-bold mt-4 text-center">
-                  Large Assortment
-                </div>
-                <div className="text-gray-500 flex justify-center text-center	mt-3">
-                  we offer many different types of products with lot of
-                  variation in each category.
-                </div>
-              </div>
-
-              <div className="  h-80 w-72 m-10 rounded-3xl my-8 flex justify-center items-center flex-col hover:shadow-xl hover:shadow-[#C1DCDC]">
-                <div className="bg-[#C1DCDC] rounded-full ">
-                  <BiPackage className="flex items-center h-24 w-24 p-2" />
-                </div>
-                <div className="font-bold mt-4 text-center">
-                  Fast & Free Shiping
-                </div>
-                <div className="text-gray-500 flex justify-center text-center	mt-3 p-1">
-                  4-day or less delivery time, free shiping and an expedited
-                  delivery option.
-                </div>
-              </div>
-
-              <div className="  h-80 w-72 m-10 rounded-3xl my-8 flex justify-center items-center flex-col hover:shadow-xl hover:shadow-[#C1DCDC]">
-                <div className="bg-[#C1DCDC] rounded-full ">
-                  <BsTelephoneForward className="flex items-center h-24 w-24 p-4" />
-                </div>
-                <div className="font-bold mt-4 text-center">
-                  Fast & Free Shiping
-                </div>
-                <div className="text-gray-500 flex justify-center text-center	mt-3 p-1">
-                  answer to any bussiness related inquiry 24/7 and in real-time.{" "}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div>
           <div className="">
             <div className="text-[40px] font-semibold flex justify-center">
@@ -410,6 +369,7 @@ const Main = ({ nav }) => {
           </div>
         </div>
       </div>
+      <Motion />
     </>
   );
 };

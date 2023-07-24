@@ -20,7 +20,7 @@ const Product = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-4 md:grid-rows-2 md:gap-x-24 mt-16">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-4 md:grid-rows-2 md:gap-x-24 mt-16 relative" >
       {/* itemValue having all api data  */}
       {products.map((itemValue) => (
         <div className=" my-5 " key={itemValue.id}>

@@ -13,9 +13,9 @@ const Preloader = () => {
   return (
     <div className="preloader">
       <div className="texts-container">
-        <span>Developer,</span>
-        <span>Developer,</span>
-        <span>Developer</span>
+        <span>Welcome</span>
+        <span>to</span>
+        <span>Mittikalakar</span>
       </div>
     </div>
   );

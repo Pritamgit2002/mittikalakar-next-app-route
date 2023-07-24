@@ -36,7 +36,7 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <div className="relative" style={{ zIndex: 10 }}>
       <div className="flex justify-between items-center mx-6 lg:mx-52 h-[100px]">
         <Link href="/" className="font-dancing-script text-[22px]">
           Mittikalakar
@@ -59,15 +59,15 @@ const Navbar = () => {
           <div className="text-[26px]">
             <div className="group overflow-hidden relative cursor-pointer text-normal uppercase  leading-6 hover:border-b-4 border-black duration-150">
               <span className="inline-block p-1 pb-0 transition duration-500 ease-out group-hover:translate-x-[120%]">
-                <LiaShoppingCartSolid size={35}/>
+                <LiaShoppingCartSolid size={35} />
               </span>
               <span className="absolute left-0 -translate-x-[180%]  p-1 pb-0 transition duration-500 ease-out group-hover:translate-x-0 group-hover:rotate-0">
-                <LiaShoppingCartSolid size={35} className="text-blue-500"/>
+                <LiaShoppingCartSolid size={35} className="text-blue-500" />
               </span>
             </div>
           </div>
           {/* Hamburger Icon */}
-          <div onClick={handleNav} className="md:hidden">
+          <div onClick={handleNav} className="md:hidden p-1">
             <AiOutlineMenu size={25} />
           </div>
         </div>
@@ -79,7 +79,6 @@ const Navbar = () => {
           nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
         }
       >
-        {/* Side Drawer Menu */}
         <div
           className={
             nav
@@ -89,7 +88,11 @@ const Navbar = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <Link href="/" className="font-dancing-script text-[22px]">
+              <Link
+                href="/"
+                className="font-dancing-script text-[22px] "
+                onClick={handleNav}
+              >
                 Mittikalakar
               </Link>
               <div
@@ -111,6 +114,7 @@ const Navbar = () => {
                 key={links.id}
                 href={links.url}
                 className="py-8 text-[22px] font- flex"
+                onClick={handleNav}
               >
                 {links.title}
                 <Image
@@ -157,6 +161,12 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
+      {/* <div className="fixed left-0 top-0 w-full h-screen bg-yellow-500 text-black p-10">
+        <div className="flex h-full flex-col">
+          <div className="text-lg text-black font-dancing-script">Mittikalakar</div>
+        </div>
+      </div> */}
     </div>
   );
 };
