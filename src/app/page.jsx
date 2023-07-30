@@ -179,23 +179,27 @@ const Main = () => {
             </button>
           </div>
 
-          <div className="my-8 cursor-pointer">
-            <div className="realtive flex justify-center items-center">
-              <Image
-                src="https://images.pexels.com/photos/15211604/pexels-photo-15211604/free-photo-of-snail-climbing-novelty-flower-pot.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                height={400}
-                width={400}
-                alt="htf"
-                className="w-full h-auto hover:shadow-xl hover:shadow-red-500 duration-300 rounded-3xl ease hover:opacity-50"
-              />
-
-              <button className="absolute opacity-0 hover:opacity-100">
-                <div className="flex justify-center items-center text-white w-12 h-12 bg-red-500 shadow-xl shadow-red-500 rounded-xl">
-                  <BsPlus className="text-3xl" />
+         <div className="my-8 ">
+            <div>
+              <div className="relative flex justify-center items-center container">
+                <Image
+                  src="https://images.pexels.com/photos/15211604/pexels-photo-15211604/free-photo-of-snail-climbing-novelty-flower-pot.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  height={400}
+                  width={400}
+                  alt="htf"
+                  className="w-full h-auto hover:shadow-xl hover:shadow-red-500 transform-gpu transition-opacity duration-400 ease-in backface-hidden "
+                />
+                <div className="absolute flex gap-5 transform h-full w-full opacity-0 transition-opacity duration-500 ease-in justify-center items-center hover:opacity-100  hover:bg-opacity-30 bg-white  hover:shadow-xl ">
+                  <div className="flex justify-center items-center text-white w-12 h-12 bg-red-500 shadow-xl shadow-red-500 rounded-xl">
+                    <BsPlus className="text-3xl cursor-pointer"/>
+                  </div>
+                  <div className="w-12 h-12 bg-gray-100 flex justify-center items-center text-primary shadow-xl shadow-gray-500 rounded-xl">
+                    <BsEyeFill className="text-3xl cursor-pointer" />
+                    {/* <Link href="/Product"/> */}
+                  </div>
                 </div>
-              </button>
+              </div>
             </div>
-
             <div className="pt-3 flex justify-between items-center">
               <div>
                 <div className="text-start text-[16px] font-medium font-poppins">
@@ -211,19 +215,40 @@ const Main = () => {
             </div>
           </div>
 
-          <div className="my-8 cursor-pointer">
-            <Image
-              src="https://images.pexels.com/photos/14782252/pexels-photo-14782252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              height={400}
-              width={400}
-              alt="htf"
-              className="w-full h-auto hover:shadow-xl shadow-red-500 duration-300"
-            />
-            <div className="pt-5 text-start text-[18px] font-medium font-poppins mx-5">
-              Ceramic Smiley Cup
+
+          <div className="my-8 ">
+            <div>
+              <div className="relative flex justify-center items-center container">
+                <Image
+                  src="https://images.pexels.com/photos/14782252/pexels-photo-14782252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  height={400}
+                  width={400}
+                  alt="htf"
+                  className="w-full h-auto hover:shadow-xl hover:shadow-red-500 transform-gpu transition-opacity duration-400 ease-in backface-hidden "
+                />
+                <div className="absolute flex gap-5 transform h-full w-full opacity-0 transition-opacity duration-500 ease-in justify-center items-center hover:opacity-100  hover:bg-opacity-40 bg-black  hover:shadow-xl ">
+                  <div className="flex justify-center items-center text-white w-12 h-12 bg-red-500 shadow-xl shadow-red-500 rounded-xl">
+                    <BsPlus className="text-3xl cursor-pointer"/>
+                  </div>
+                  <div className="w-12 h-12 bg-gray-100 flex justify-center items-center text-primary shadow-xl shadow-gray-500 rounded-xl">
+                    <BsEyeFill className="text-3xl cursor-pointer" />
+                    {/* <Link href="/Product"/> */}
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="text-[18px] font-medium text-black text-opacity-60 text-start font-poppins mx-5">
-              ₹ 623.00
+            <div className="pt-3 flex justify-between items-center">
+              <div>
+                <div className="text-start text-[16px] font-medium font-poppins">
+                  Snail Flower Pot
+                </div>
+                <div className="text-[14px] font-medium text-black text-opacity-60 text-start font-poppins">
+                  ₹ 4545.00
+                </div>
+              </div>
+              <button className="px-6 bg-slate-500 py-2 rounded text-white">
+                BRO
+              </button>
             </div>
           </div>
           <div className="my-8 cursor-pointer">
