@@ -3,6 +3,17 @@ import React from "react";
 
 const page = () => {
   return (
+
+    <div>
+          <div className="">
+            <div className="text-[40px] font-semibold flex justify-center font-dancing-script ">
+              Category
+            </div>
+            <p className="flex justify-center font-semibold text-gray-500 mt-2">
+              Find What You Are Looking For
+            </p>
+          </div>
+
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-4 md:grid-rows-2 md:gap-[26px] my-20 mx-4 md:mx-56  gap-8  ">
       
 
@@ -16,7 +27,7 @@ const page = () => {
             className="w-[405px] h-60 "
           />
         </div>
-        <div className="absolute mx-5 my-20 ">
+        <div className="absolute mx-5 my-20 font-dancing-script ">
           <div className="text-[26px] md:text-[34px] font-bold uppercase hover:text-black">
             Lorem
           </div>
@@ -116,6 +127,7 @@ const page = () => {
       </div>
 
 
+    </div>
     </div>
   );
 };
