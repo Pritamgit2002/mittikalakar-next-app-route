@@ -91,7 +91,7 @@ const page = () => {
         />
         <div class="absolute top-0 left-0 w-full h-full bg-black opacity-0 flex justify-center items-center transition-opacity duration-300 group-hover:opacity-70">
           <span class="text-white text-[30px] font-semibold  transform -translate-x-full transition-transform duration-800 tracking-wider  group-hover:translate-x-0 uppercase">
-            Your White Text
+            Your Text
           </span>
         </div>
       </div>
@@ -106,7 +106,7 @@ const page = () => {
         />
         <div class="absolute top-0 left-0 w-full h-full bg-black opacity-0 flex justify-center items-center transition-opacity duration-300 group-hover:opacity-70">
           <span class="text-white text-[30px] font-semibold  transform -translate-x-full transition-transform duration-800 tracking-wider  group-hover:translate-x-0 uppercase">
-            Your White Text
+            Your Text
           </span>
         </div>
       </div>
@@ -121,7 +121,7 @@ const page = () => {
         />
         <div class="absolute top-0 left-0 w-full h-full bg-black opacity-0 flex justify-center items-center transition-opacity duration-300 group-hover:opacity-70">
           <span class="text-white text-[30px] font-semibold  transform -translate-x-full transition-transform duration-800 tracking-wider  group-hover:translate-x-0 uppercase">
-            Your White Text
+            Your Text
           </span>
         </div>
       </div>
