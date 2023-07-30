@@ -179,7 +179,7 @@ const Main = () => {
             </button>
           </div>
 
-         <div className="my-8 ">
+          <div className="my-8 ">
             <div>
               <div className="relative flex justify-center items-center container">
                 <Image
@@ -189,12 +189,12 @@ const Main = () => {
                   alt="htf"
                   className="w-full h-auto hover:shadow-xl hover:shadow-red-500 transform-gpu transition-opacity duration-400 ease-in backface-hidden "
                 />
-                <div className="absolute flex gap-5 transform h-full w-full opacity-0 transition-opacity duration-500 ease-in justify-center items-center hover:opacity-100  hover:bg-opacity-30 bg-white  hover:shadow-xl ">
+                <div className="absolute flex gap-5 transform h-full w-full opacity-0 transition-opacity duration-500 justify-center items-center hover:opacity-100  hover:bg-opacity-50 bg-black  hover:shadow-xl ">
                   <div className="flex justify-center items-center text-white w-12 h-12 bg-red-500 shadow-xl shadow-red-500 rounded-xl">
-                    <BsPlus className="text-3xl cursor-pointer"/>
+                      <BsPlus className="text-3xl cursor-pointer" />
                   </div>
                   <div className="w-12 h-12 bg-gray-100 flex justify-center items-center text-primary shadow-xl shadow-gray-500 rounded-xl">
-                    <BsEyeFill className="text-3xl cursor-pointer" />
+                      <BsEyeFill className="text-3xl cursor-pointer" />
                     {/* <Link href="/Product"/> */}
                   </div>
                 </div>
@@ -228,7 +228,7 @@ const Main = () => {
                 />
                 <div className="absolute flex gap-5 transform h-full w-full opacity-0 transition-opacity duration-500 ease-in justify-center items-center hover:opacity-100  hover:bg-opacity-40 bg-black  hover:shadow-xl ">
                   <div className="flex justify-center items-center text-white w-12 h-12 bg-red-500 shadow-xl shadow-red-500 rounded-xl">
-                    <BsPlus className="text-3xl cursor-pointer"/>
+                    <BsPlus className="text-3xl cursor-pointer" />
                   </div>
                   <div className="w-12 h-12 bg-gray-100 flex justify-center items-center text-primary shadow-xl shadow-gray-500 rounded-xl">
                     <BsEyeFill className="text-3xl cursor-pointer" />
@@ -251,6 +251,7 @@ const Main = () => {
               </button>
             </div>
           </div>
+          
           <div className="my-8 cursor-pointer">
             <Image
               src="https://images.unsplash.com/photo-1630543378528-10043e324452?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
