@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 import "swiper/css/autoplay";
 // import pic2 from "../public/pic2.jpg";
 import React, { useEffect } from "react";
-import { BsPlus } from "react-icons/bs";
+import { BsPlus,BsEyeFill } from "react-icons/bs";
 import Motion from "./motions/page";
 import About from "./about/page";
 
