@@ -2,8 +2,6 @@ import React from "react";
 import { BsTelephoneForward } from "react-icons/bs";
 import { BiPackage } from "react-icons/bi";
 import { GiPaintedPottery } from "react-icons/gi";
-import Shake from "react-reveal/Shake";
-import Fade from 'react-reveal/Fade';
 
 
 const About = () => {
