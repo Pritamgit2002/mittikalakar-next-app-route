@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FcRight } from "react-icons/fc";
-import { BsPlus,BsEyeFill } from "react-icons/bs";
+import { BsPlus, BsEyeFill } from "react-icons/bs";
 
 const BestSelling = () => {
   return (
@@ -105,6 +105,15 @@ const BestSelling = () => {
           alt="htf"
           className="w-full h-auto hover:shadow-xl shadow-red-500 duration-300"
         />
+        <div className="absolute flex gap-5 transform h-full w-full opacity-0 transition-opacity duration-500 justify-center items-center hover:opacity-100  hover:bg-opacity-50 bg-black  hover:shadow-xl ">
+          <div className="flex justify-center items-center text-white w-12 h-12 bg-red-500 shadow-xl shadow-red-500 rounded-xl">
+            <BsPlus className="text-3xl cursor-pointer" />
+          </div>
+          <div className="w-12 h-12 bg-gray-100 flex justify-center items-center text-primary shadow-xl shadow-gray-500 rounded-xl">
+            <BsEyeFill className="text-3xl cursor-pointer" />
+            {/* <Link href="/Product"/> */}
+          </div>
+        </div>
         <div className="pt-5 text-start text-[18px] font-medium font-poppins mx-5">
           Ceramic Tea Set
         </div>
@@ -120,6 +129,15 @@ const BestSelling = () => {
           alt="htf"
           className="w-full h-auto hover:shadow-xl shadow-red-500 duration-300"
         />
+        <div className="absolute flex gap-5 transform h-full w-full opacity-0 transition-opacity duration-500 justify-center items-center hover:opacity-100  hover:bg-opacity-50 bg-black  hover:shadow-xl ">
+          <div className="flex justify-center items-center text-white w-12 h-12 bg-red-500 shadow-xl shadow-red-500 rounded-xl">
+            <BsPlus className="text-3xl cursor-pointer" />
+          </div>
+          <div className="w-12 h-12 bg-gray-100 flex justify-center items-center text-primary shadow-xl shadow-gray-500 rounded-xl">
+            <BsEyeFill className="text-3xl cursor-pointer" />
+            {/* <Link href="/Product"/> */}
+          </div>
+        </div>
         <div className="pt-5 text-start text-[18px] font-medium font-poppins mx-5">
           Black Classy Tea Set
         </div>
@@ -135,6 +153,15 @@ const BestSelling = () => {
           alt="htf"
           className="w-full h-auto hover:shadow-xl hover:shadow-grey-600 duration-300"
         />
+        <div className="absolute flex gap-5 transform h-full w-full opacity-0 transition-opacity duration-500 justify-center items-center hover:opacity-100  hover:bg-opacity-50 bg-black  hover:shadow-xl ">
+          <div className="flex justify-center items-center text-white w-12 h-12 bg-red-500 shadow-xl shadow-red-500 rounded-xl">
+            <BsPlus className="text-3xl cursor-pointer" />
+          </div>
+          <div className="w-12 h-12 bg-gray-100 flex justify-center items-center text-primary shadow-xl shadow-gray-500 rounded-xl">
+            <BsEyeFill className="text-3xl cursor-pointer" />
+            {/* <Link href="/Product"/> */}
+          </div>
+        </div>
         <div className="pt-5 text-start text-[18px] font-medium font-poppins mx-5">
           Glass Lamp
         </div>
@@ -150,6 +177,15 @@ const BestSelling = () => {
           alt="htf"
           className="w-full h-auto hover:shadow-xl hover:shadow-grey-600 duration-300"
         />
+        <div className="absolute flex gap-5 transform h-full w-full opacity-0 transition-opacity duration-500 justify-center items-center hover:opacity-100  hover:bg-opacity-50 bg-black  hover:shadow-xl ">
+          <div className="flex justify-center items-center text-white w-12 h-12 bg-red-500 shadow-xl shadow-red-500 rounded-xl">
+            <BsPlus className="text-3xl cursor-pointer" />
+          </div>
+          <div className="w-12 h-12 bg-gray-100 flex justify-center items-center text-primary shadow-xl shadow-gray-500 rounded-xl">
+            <BsEyeFill className="text-3xl cursor-pointer" />
+            {/* <Link href="/Product"/> */}
+          </div>
+        </div>
         <div className="pt-5 text-start text-[18px] font-medium font-poppins mx-5">
           Glass Lamp
         </div>
