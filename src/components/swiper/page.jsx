@@ -18,7 +18,7 @@ const Carousel = () => {
           delay: 3000,
         }}
         loop={true}
-        className="cursor-pointer h-[450px] lg:h-[580px] rounded-[35px] bg-red-200 shadow-xl shadow-gray-400"
+        className="cursor-pointer h-[450px] lg:h-[580px] rounded-md bg-red-200 shadow-xl shadow-gray-400"
         pagination={{ clickable: true }}
       >
         <div className="flex items-center justify-center ">
@@ -29,7 +29,7 @@ const Carousel = () => {
                 height={400}
                 width={800}
                 alt="htf"
-                className="w-full h-full shadow-xl shadow-gray-500"
+                className="w-full h-full shadow-xl shadow-gray-500 object-cover"
               />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center text-white">
@@ -49,7 +49,7 @@ const Carousel = () => {
                 height={400}
                 width={800}
                 alt="htf"
-                className="h-full w-full shadow-2xl shadow-gray-500"
+                className="h-full w-full shadow-2xl shadow-gray-500 object-cover"
               />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center text-white">
@@ -68,7 +68,7 @@ const Carousel = () => {
                 height={400}
                 width={800}
                 alt="htf"
-                className="h-full w-full shadow-2xl shadow-gray-500"
+                className="h-full w-full shadow-2xl shadow-gray-500 object-cover"
               />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center text-white">
@@ -87,7 +87,7 @@ const Carousel = () => {
               height={400}
               width={800}
               alt="trfdtrd"
-              className="h-full w-full shadow-2xl shadow-gray-500"
+              className="h-full w-full shadow-2xl shadow-gray-500 object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -97,7 +97,7 @@ const Carousel = () => {
                 height={400}
                 width={800}
                 alt="trfdtrd"
-                className="h-full w-full shadow-2xl shadow-gray-500"
+                className="h-full w-full shadow-2xl shadow-gray-500 object-cover"
               />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center text-white">
@@ -116,7 +116,7 @@ const Carousel = () => {
                 height={400}
                 width={800}
                 alt="trfdtrd"
-                className="h-full w-full shadow-2xl shadow-gray-500"
+                className="h-full w-full shadow-2xl shadow-gray-500 object-cover"
               />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center text-white">

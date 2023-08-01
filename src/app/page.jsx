@@ -25,8 +25,8 @@ const Main = () => {
         <BestSelling />
         <About />
         <Category />
+        <Motion />
       </div>
-      <Motion />
     </>
   );
 };
