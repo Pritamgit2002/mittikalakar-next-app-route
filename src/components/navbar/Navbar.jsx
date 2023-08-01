@@ -38,10 +38,10 @@ const Navbar = () => {
   return (
     <div className="relative" style={{ zIndex: 10 }}>
       <div className="flex justify-between items-center mx-6 lg:mx-52 h-[100px]">
-        <Link href="/" className="font-dancing-script text-[22px]">
+        <Link href="/" className="font-dancing-script text-[22px] text-white">
           Mittikalakar
         </Link>
-        <div className="flex justify-between gap-[30px] md:gap-[50px]">
+        <div className="flex justify-between gap-[30px] md:gap-[50px] text-white">
           <div className="hidden md:flex items-center gap-[50px]">
             {navLinks.map((links) => (
               <Link key={links.id} href={links.url}>

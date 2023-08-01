@@ -6,6 +6,7 @@ import About from "./about/page";
 import Carousel from "@/components/swiper/page";
 import BestSelling from "@/components/bestSelling/page";
 import Category from "@/components/categories/page";
+import LandingPage from "@/components/landing/page";
 
 // import Preloader from "@/components/preloader/Preloader";
 
@@ -20,8 +21,9 @@ const Main = () => {
 
   return (
     <>
-      <div className="mx-5 lg:mx-52 flex-col justify-center lg:mt-8">
-        <Carousel />
+      <div className="mx-5 lg:mx-52 flex-col justify-center lg:mt-8 relative">
+        {/* <Carousel /> */}
+        <LandingPage />
         <BestSelling />
         <About />
         <Category />
