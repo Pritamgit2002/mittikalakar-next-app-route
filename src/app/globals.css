@@ -5,3 +5,13 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.Playfair-Display {
+  font-family: 'Playfair Display', sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Qwigley&display=swap");
+.Qwigley-font {
+  font-family: "Qwigley", sans-serif;
+}
