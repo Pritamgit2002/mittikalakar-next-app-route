@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <div className="flex-col justify-between">
-          <Preloader />
+          {/* <Preloader /> */}
           <div className="h-[100vh]">
             <video src="/assets/bg-video.mp4" className="absolute object-cover h-full" autoPlay loop muted />
             <Navbar style={{ zIndex: 10 }} />

@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div>
       <footer className={`${styles.container}`}>
-        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-12">
+        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-12 mb-0 ">
           <div className="md:flex md:justify-between">
               <Link href="/" className="flex items-center">
                 {/* <img src='' className="h-10 mr-3" alt="Mittimaker Logo" /> */}

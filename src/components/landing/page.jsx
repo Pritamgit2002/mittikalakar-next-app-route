@@ -15,7 +15,7 @@ const LandingPage = () => {
 
     titles.forEach((title, index) => {
       const el = title.querySelectorAll("span span");
-      const delay = index * 0.08;
+      const delay = index * 0.8;
 
       tl.to(
         el,
